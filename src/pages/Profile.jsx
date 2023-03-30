@@ -5,14 +5,14 @@ import Loader from "../components/Loader";
 const Profile = () => {
   const { isAuthenticated, loading, user } = useContext(Context);
 
-  return isAuthenticated ? (
+  return loading ? (
     <Loader />
-  ) : (
+   ) :(isAuthenticated ? (
     <div>
       <h1>{user?.name}</h1>
       <p>{user?.email}</p>
-    </div>
-  );
+    </div>):<Loader/>)
+;
 };
 
 export default Profile;

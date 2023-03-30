@@ -17,7 +17,7 @@ const Header = () => {
 
       toast.success("Logged Out Successfully");
       setIsAuthenticated(false);
-      setLoading(false);
+      setLoading(true);
     } catch (error) {
       toast.error(error.response.data.message);
       setIsAuthenticated(true);

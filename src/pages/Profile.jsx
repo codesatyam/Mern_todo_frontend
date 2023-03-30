@@ -9,7 +9,7 @@ const Profile = () => {
     <Loader />
   ) : (
     <div>
-      <h1>{isAuthenticated?"":user?.name}</h1>
+      <h1>{user?.name}</h1>
       <p>{user?.email}</p>
     </div>
   );

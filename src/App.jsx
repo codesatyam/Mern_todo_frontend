@@ -26,7 +26,7 @@ function App() {
       .catch((error) => {
         setUser({});
         setIsAuthenticated(false);
-        setLoading(true);
+        setLoading(false);
       });
   }, []);
 
